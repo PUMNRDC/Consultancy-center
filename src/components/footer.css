@@ -1,0 +1,121 @@
+.footer {
+  background-color: #DC2626;
+  color: white;
+  padding: 3em 5em 3em 5em !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+ 
+  width: 100%;
+  color: white;
+  margin-left: 2em;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.pu_logo {
+  width: 250px;
+}
+
+.footer-links {
+  margin-left: 2em;
+  color: white;
+}
+
+.footer-contact {
+  margin-left: 2em;
+  color: white;
+}
+
+.footer-links h4, .footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 1rem;
+  color: white !important;
+}
+
+.address {
+  padding-bottom: 30px;
+}
+
+.footer-social-icons a {
+  font-size: 1.8rem;
+  color: white !important; 
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 2em 3em 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .GetinTouch {
+    padding-bottom: 10px;
+  }
+
+  .PUMNRDC h4{
+    margin-bottom: 2  0px;
+  }
+  .address, .contactdetails  {
+        text-align: center;
+  }
+
+  .footer-links, .footer-contact, .footer-social-icons {
+    align-items: center;
+    text-align: center;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    padding-bottom: 20px;
+  }
+}

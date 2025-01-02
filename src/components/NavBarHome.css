@@ -1,0 +1,225 @@
+/* Base styles for the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+  background-color: transparent;
+  color: white; /* Default color */
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Apply styles when scrolled */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: black !important;
+}
+
+/* Logo styling */
+.navbar-logo img {
+  transition: opacity 0.3s ease;
+}
+
+/* Center align links in the navbar */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  transition: color 0.3s ease;
+}
+
+
+/* Add the underline effect */
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0; /* Initial width */
+  height: 3px; /* Thickness of the underline */
+  background-color: #0629b7; /* Underline color */
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.navbar-links li a:hover::after {
+  width: 100%; /* Expand underline to full width */
+}
+
+/* Change link color on hover */
+.navbar-links li a:hover {
+  color: #0629b7;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white !important; /* Initial color for links */
+  font-weight: 500;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar.scrolled .navbar-links li a {
+  color: black !important; /* Change to black when scrolled */
+}
+
+.navbar-links li a:hover {
+  transform: scale(1.5); /* Slightly grow the link */
+  color: #0629b7;
+  border-bottom: 1px #0629b7;
+}
+
+/* CTA button style */
+.cta {
+  padding: 10px 20px;
+  background-color: #0629b7;
+  color: white !important;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #0629b7; /* Darker shade on hover */
+}
+
+/* Supported section in the navbar */
+.navbar-supported {
+  font-size: 12px;
+  text-align: right;
+  color: inherit;
+}
+
+.navbar.scrolled .navbar-supported {
+  color: black;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Drawer styles */
+.drawer {
+  position: fixed;
+  top: -100%; /* Drawer will now open from the top */
+  width: 100%;
+  background-color: #141414;
+  color: white;
+  transition: top 0.3s ease;
+  z-index: 9999;
+  padding-top: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.drawer.open {
+  top: 0; /* Slides down when opened */
+}
+
+.close-drawer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+}
+
+.drawer ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.drawer ul li a:hover {
+  color: #DC2626;
+}
+
+/* Center the "Resource Booking" button */
+.drawer ul li .cta {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 5px 10px;
+  background-color: #DC2626;
+  color: white !important;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* "Supported By" section centered horizontally */
+.navbar-supported-mobile {
+  text-align: center !important; /* Centers the logo horizontally */
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-links {
+    display: none; /* Hide links in mobile view */
+      flex-direction: row !important;
+      justify-content: space-between;
+  }
+
+  .img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .navbar-logo img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .navbar-supported {
+    display: none;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger in mobile view */
+  }
+}

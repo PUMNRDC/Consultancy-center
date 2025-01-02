@@ -1,0 +1,290 @@
+/* General container styles */
+.contact-form-container {
+  padding-top: 10rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif, Arial;
+  padding: 5rem;
+  background-color: #f9f9f9;
+
+}
+/* Material Conductivity Question */
+.material-conductivity-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.disabled-service {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.material-conductivity-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0629B7;
+  margin-bottom: 10px;
+}
+.material-conductivity-section select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.material-conductivity-section select:focus {
+  border-color: #0629B7;
+  outline: none;
+}
+
+.additionalInformation{
+  height: 18vh;
+}
+
+.material-conductivity-section label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+.noteXRD {
+  font-weight: 600;
+  color: #0629B7;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: large;
+}
+
+.noteLCR {
+  font-weight: 600;
+  color: #0629B7;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: large;
+}
+.material-conductivity-section input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.material-conductivity-section .error-flag {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: red;
+  text-align: left;
+  font-weight: bold;
+}
+/* Contact info section */
+.contact-info {
+  width: 100%;
+  padding: 20px;
+  background-color: #0629B7;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  align-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  font-family: inherit;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.contact-info p,
+.general-inquiries p,
+.social-media a {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Button styles */
+.find-agent-button {
+  background-color: #fff;
+  color: #002e50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.find-agent-button:hover {
+  background-color: #0629B7;
+  color: #fff;
+}
+
+/* Phone number styling */
+.phone-number {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Social media links */
+.social-media a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ffc107;
+}
+
+/* Contact form styles */
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #0629B7;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #0629B7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color:#fff;
+  color:#0629B7;
+  border: 1px solid #0629B7;
+}
+
+/* Services and Add-ons section */
+.equipmentservices-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0%;
+}
+
+.equipmentservices-section,
+.addons-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between items */
+  padding: 10px;
+  min-width: 250px;
+}
+
+/* Header styling for sections */
+.equipmentservices-section h4,
+.addons-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0629B7;;
+  text-align: left;
+}
+
+/* Checkbox and label styling */
+.equipmentservices-section label,
+.addons-section label {
+  display: flex;
+  font-size: 14px;
+  gap: 4px;
+  margin: 0; /* Remove any additional margins */
+  flex-direction: row; /* Align checkboxes and labels in a row */
+}
+
+.error-flag {
+  color: #0629B7;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .contact-form-container {
+    flex-wrap: nowrap;
+  }
+
+  .contact-info {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .contact-form {
+    width: 50%;
+
+  }
+
+}
+
+@media (max-width: 767px) {
+  .contact-form-container {
+    padding: 2rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+
+  .contact-form button {
+    padding: 12px;
+  }
+}
