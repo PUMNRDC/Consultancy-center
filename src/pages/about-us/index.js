@@ -3,7 +3,6 @@ import NavBarHome from "@/components/NavBarHome";
 import ConsultancyHero from "../components/ConsultancyHero";
 import ContactPageComponent from "@/components/ContactPageComponent";
 import FooterBar from "@/components/footerBar";
-import CollaborationsCarousel from "@/components/CollaborationsCarousel";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
