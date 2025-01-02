@@ -1,12 +1,10 @@
 import Head from "next/head";
 import NavBarHome from "@/components/NavBarHome";
-import Hero from "../components/Hero";
+import ConsultancyHero from "../components/ConsultancyHero";
 import ContactPageComponent from "@/components/ContactPageComponent";
 import FooterBar from "@/components/footerBar";
-import ConsultancyHero from "@/components/ConsultancyHero";
 import CollaborationsCarousel from "@/components/CollaborationsCarousel";
 import { Geist, Geist_Mono } from "next/font/google";
-import OurObjectives from "@/components/OurObjectives";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,23 +20,14 @@ export default function Home() {
   return (
     <>
       <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin= "anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-          rel="stylesheet"
-        />
-        <title>Consultancy Center of Parul University</title>
+        <title>About Consultancy Center of Parul University</title>
         <meta name="description" content="Provising effective Solutions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div>
         <NavBarHome />
-        <Hero/>
         <ConsultancyHero />
-        <CollaborationsCarousel />
-        <OurObjectives/>
         <ContactPageComponent />
         <FooterBar/>
       </div>

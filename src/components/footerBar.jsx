@@ -21,29 +21,29 @@ const FooterBar = () => {
               <Link href="/contact">Get a Quote</Link>
             </li>
             <li>
-              <Link href="https://micronanornd.paruluniversity.ac.in/#KeyFeature">Who We Are</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#WhoWeAre">Who We Are</Link>
             </li>
             <li>
-              <Link href="https://micronanornd.paruluniversity.ac.in/#OurTeam">Our People & Values</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/facilties">Our Facilties</Link>
             </li>
             <li>
-              <Link href="https://micronanornd.paruluniversity.ac.in/pricing">Pricing</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/services">Our Services</Link>
             </li>
             <li>
-              <Link href="https://micronanornd.paruluniversity.ac.in/#ResearchUpdate">News & Views</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#AboutUs">About Us</Link>
             </li>
           </ul>
         </div>
         <div className="footer-contact">
-          <a href="https://maps.app.goo.gl/Gj1fwqDi9GdETKP59" className="PUMNRDC">
+          <a href="https://maps.app.goo.gl/Gj1fwqDi9GdETKP59" className="Consultancy">
             <h4>
-              Parul University Micro-Nano Research & Development Center
+              Parul University Consultancy Center
             </h4>
             <p className="address">Parul University, P. O Limda, Waghodia, Vadodara,<br />Gujarat, India - 391760</p>
           </a>
           <h4 className="GetinTouch">Get in Touch:<br /></h4>
-          <p className="contactdetails" > <a href="mailto:micronanornd@paruluniversity.ac.in">Email: micronanornd@paruluniversity.ac.in</a><br /></p>
-          <p className="contactdetails" > <a href="tel:+918511369904">Mobile: +91 85113 69904</a><br /></p>
+          <p className="contactdetails" > <a href="mailto:consultancy@paruluniversity.ac.in">Email: consultancy@paruluniversity.ac.in</a><br/>
+          </p>
         </div>
       </div>
     </footer>

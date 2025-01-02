@@ -43,10 +43,10 @@ const NavBarHome = () => {
           </Link>
         </div>
         <ul className="navbar-links">
-          <li><a href="/equipments">Equipments</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/pricing">Pricing</a></li>
-          <li><a href="/contact" className="cta">Resource Booking</a></li>
+          <li><a href="/equipments">OurFacilities</a></li>
+          <li><a href="/pricing">Our Services</a></li>
+          <li><a href="/contact" className="cta">Contact Us</a></li>
         </ul>
           
         <div className="hamburger" onClick={toggleDrawer}>

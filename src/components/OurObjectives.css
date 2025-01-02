@@ -1,0 +1,82 @@
+.objectives-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  .objectives-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .objective-item {
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding: 35px;
+    color: #fff;
+    width: 250px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  .objective-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .objective-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  
+  .objective-item p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+/* Different background images for each block */
+.research-support {
+    background-image: url('/ResearchSupport.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .innovative-development {
+    background-image: url('/InnovativeDevelopment.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .training-capacity-building {
+    background-image: url('/TrainingCapacityBuilding.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .developing-networks {
+    background-image: url('/DevelopingNetworks.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .additional-services {
+    background-image: url('/AdditionalServices.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
