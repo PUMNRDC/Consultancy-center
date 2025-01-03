@@ -5,6 +5,7 @@ import ContactPageComponent from "@/components/ContactPageComponent";
 import FooterBar from "@/components/footerBar";
 import ConsultancyHero from "@/components/ConsultancyHero";
 import CollaborationsCarousel from "@/components/CollaborationsCarousel";
+import OurFacilities from"@/components/OurFacilities";
 import { Geist, Geist_Mono } from "next/font/google";
 import OurObjectives from "@/components/OurObjectives";
 
@@ -39,6 +40,7 @@ export default function Home() {
         <ConsultancyHero />
         <CollaborationsCarousel />
         <OurObjectives/>
+        <OurFacilities/>
         <ContactPageComponent />
         <FooterBar/>
       </div>

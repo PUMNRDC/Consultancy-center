@@ -5,7 +5,8 @@ import "../components/ContactPage.css";
 import '../components/footer.css';
 import '../components/CollaborationsCarousel.css';
 import "../components/ConsultancyHero.css";
-import "../components/OurObjectives.css"
+import "../components/OurObjectives.css";
+import "../components/OurFacilities.css";
 
 
 
