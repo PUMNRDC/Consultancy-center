@@ -39,7 +39,7 @@
   }
   
   .objective-item p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
   }
   
@@ -58,6 +58,12 @@
   
   .innovative-development {
     background-image: url('/InnovativeDevelopment.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .laboratory-resource {
+    background-image: url('/LaboratoryResourceSharing.jpg');
     background-size: cover;
     background-position: center;
   }

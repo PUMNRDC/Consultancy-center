@@ -44,8 +44,9 @@ const NavBarHome = () => {
         </div>
         <ul className="navbar-links">
           <li><a href="/about">About</a></li>
-          <li><a href="/equipments">OurFacilities</a></li>
-          <li><a href="/pricing">Our Services</a></li>
+          <li><a href="/facilities">Facilities</a></li>
+          <li><a href="/clients">Clients</a></li>
+          <li><a href="/services">Services</a></li>
           <li><a href="/contact" className="cta">Contact Us</a></li>
         </ul>
           

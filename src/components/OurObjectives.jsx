@@ -8,16 +8,16 @@ const OurObjectives = () => {
       <div className="objectives-container">
         <div className="objective-item research-support">
           <div className="icon">
-            <Image src="/developing-networks.png" alt="Research Support" width={50} height={50} />
+            <Image src="/developing-networks.png" alt="Joint Research & Publications" width={50} height={50} />
           </div>
-          <h3>Research Support</h3>
+          <h3>Joint Research & Publications</h3>
           <p>To support research in advanced areas of science and technology.</p>
         </div>
         <div className="objective-item innovative-development">
           <div className="icon">
-            <Image src="/innovative-development.png" alt="Innovative Development" width={50} height={50} />
+            <Image src="/consultancyprojects.png" alt="Consultancy Projects" width={50} height={50} />
           </div>
-          <h3>Innovative Development</h3>
+          <h3>Consultancy Projects</h3>
           <p>To offer support to R&D centres & industries towards design & development of their products.</p>
         </div>
         <div className="objective-item training-capacity-building">
@@ -29,17 +29,24 @@ const OurObjectives = () => {
         </div>
         <div className="objective-item developing-networks">
           <div className="icon">
-            <Image src="/developing-networks.png" alt="Developing Networks" width={50} height={50} />
+            <Image src="/Innovative-development.png" alt="Innovative Development" width={50} height={50} />
           </div>
-          <h3>Developing Networks</h3>
+          <h3>Innovative Product Design & Development</h3>
           <p>To build a strong industry academic network.</p>
+        </div>
+        <div className="objective-item laboratory-resource">
+          <div className="icon">
+            <Image src="/LaboratoryResource.png" alt="Laboratory Resource Sharing" width={50} height={50} />
+          </div>
+          <h3>Laboratory Resouce Sharing</h3>
+          <p>To offer services to industries and other education and research organizations as testing/consultancy services.</p>
         </div>
         <div className="objective-item additional-services">
           <div className="icon">
             <Image src="/additional-services.png" alt="Additional Services" width={50} height={50} />
           </div>
           <h3>Additional Services</h3>
-          <p>To offer services to industries and other education and research organizations as testing/consultancy services.</p>
+          <p>To offer customised services to industries and other education and research organizations as testing/consultancy services as per their needs.</p>
         </div>
       </div>
     </section>
