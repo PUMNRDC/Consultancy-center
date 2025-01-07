@@ -12,7 +12,7 @@ const FooterBar = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src='./parul.svg' alt="Parul University" className="pu_logo" />
+          <img src='./  ' alt="Parul University" className="pu_logo" />
         </div>
         <div className="footer-links">
           <h4 className="QuickLinks">Quick links</h4>
@@ -39,7 +39,7 @@ const FooterBar = () => {
             <h4>
               Parul University Consultancy Center
             </h4>
-            <p className="address">Parul University, P. O Limda, Waghodia, Vadodara,<br />Gujarat, India - 391760</p>
+            <p className="address">1st Floor, Subhash Chandra Bose Bhavan, Parul University, P. O Limda, Waghodia, Vadodara,<br />Gujarat, India - 391760</p>
           </a>
           <h4 className="GetinTouch">Get in Touch:<br /></h4>
           <p className="contactdetails" > <a href="mailto:consultancy@paruluniversity.ac.in">Email: consultancy@paruluniversity.ac.in</a><br/>
