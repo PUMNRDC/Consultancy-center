@@ -33,7 +33,7 @@ const NavBarHome = () => {
         <div className="navbar-logo">
           <Link href="/" passHref>
             <Image 
-              src={scrolled ? '/Parul-black.svg':'/Parul.svg' }
+              src={scrolled ? '/Parul-black.svg':'/parul.svg' }
               alt="Logo"
               width={325} 
               height={50}
