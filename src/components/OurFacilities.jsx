@@ -28,9 +28,9 @@ const FacilitiesSection = () => {
     { name: "Formulation Development Laboratory", icon: "/Formulation-Development-Laboratory.png" },
     { name: "Patent Filing Services", icon: "/Patent-Filing-Services.png" },
     { name: "3D Printer & Scanner Services", icon: "/3D-Printer-Scanner-Services.png" },
-    { name: "Biomedical Engineering Lab", icon: "/biomedical-engineering-lab.png" },
-    { name: "Renewable Energy Lab", icon: "/renewable-energy-lab.png" },
-    { name: "Material Science Lab", icon: "/material-science-lab.png" },
+    { name: "AR/VR LAB", icon: "/AR-VR-LAB.png" },
+    { name: "FabLab", icon: "/FabLab.png" },
+    { name: "Registered Ethical Committee Human Animal Research", icon: "/Registered-Ethical-Committee-Human-Animal-Research.png" },
     { name: "Civil Engineering Lab", icon: "/civil-engineering-lab.png" },
     { name: "AI and Machine Learning Center", icon: "/ai-and-machine-learning-center.png" },
   ];
