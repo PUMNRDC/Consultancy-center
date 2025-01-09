@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const FacilitiesSection = () => {
-  const trackRef = useRef(null);
-  const intervalRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
-
   const facilityData = [
     { name: "Instrumentation Facilities", icon: "/Instrumentation-Facilities.png" },
     { name: "Microbiology Department", icon: "/Microbiology-Department.png" },
@@ -24,51 +24,47 @@ const FacilitiesSection = () => {
     { name: "IOT Lab", icon: "/IOT-Lab.png" },
     { name: "Ayurveda Product Development Facility", icon: "/Ayurveda-Product-Development-Facility.png" },
     { name: "Technology Transfer Services", icon: "/Technology-Transfer-Services.png" },
-    { name: "Licensed Sofware Services", icon: "/Licensed-Sofware-Services.png" },
-    { name: "Instrumentation Faciltites", icon: "/Instrumentation-Facilities.png" },
-    { name: "Formulation Development Laboratory", icon: "/Formulation-Development-Laboratory.png" },
-    { name: "Patent Filing Services", icon: "/Patent-Filing-Services.png" },
-    { name: "3D Printer & Scanner Services", icon: "/3D-Printer-Scanner-Services.png" },
-    { name: "AR/VR LAB", icon: "/AR-VR-LAB.png" },
-    { name: "FabLab", icon: "/FabLab.png" },
-    { name: "Registered Ethical Committee Human Animal Research", icon: "/Registered-Ethical-Committee-Human-Animal-Research.png" },
+    { name: "Licensed Software Services", icon: "/Licensed-Sofware-Services.png" },
   ];
 
-  const scrollTrack = () => {
-    if (trackRef.current) {
-      trackRef.current.scrollLeft += 1;
-      if (trackRef.current.scrollLeft >= trackRef.current.scrollWidth / 2) {
-        trackRef.current.scrollLeft = 0; // Reset scroll for infinity loop
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (!isHovered) {
-      intervalRef.current = setInterval(scrollTrack, 50); // Speed of scrolling
-    }
-    return () => clearInterval(intervalRef.current);
-  }, [isHovered]);
+  const itemsPerRow = 4; // Number of items per row
+  const rowsPerSlide = 2; // Number of rows per slide
+  const itemsPerSlide = itemsPerRow * rowsPerSlide;
 
   return (
-    <div
-      className="facilities-section"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="facilities-section">
       <h2>Our State of the Art Facilities</h2>
       <div className="underlineCollaborationsCarousel"></div>
-      <div className="scroll-container" ref={trackRef}>
-        {[...facilityData, ...facilityData].map((facility, index) => (
-          <div className="facility-card" key={index}>
-            <img src={facility.icon} alt={facility.name} />
-            <p>{facility.name}</p>
-          </div>
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 5000 }}
+        loop={true}
+        slidesPerView={1}
+      >
+        {Array.from({ length: Math.ceil(facilityData.length / itemsPerSlide) }).map((_, slideIndex) => (
+          <SwiperSlide key={slideIndex}>
+            <div className="slide">
+              {Array.from({ length: rowsPerSlide }).map((_, rowIndex) => (
+                <div className="row" key={rowIndex} style={{ display: "flex", justifyContent: "space-evenly" }}>
+                  {facilityData
+                    .slice(
+                      slideIndex * itemsPerSlide + rowIndex * itemsPerRow,
+                      slideIndex * itemsPerSlide + (rowIndex + 1) * itemsPerRow
+                    )
+                    .map((facility, index) => (
+                      <div className="facility-card" key={index} style={{ textAlign: "center" }}>
+                        <img src={facility.icon} alt={facility.name} style={{ width: "80px", height: "80px" }} />
+                        <p>{facility.name}</p>
+                      </div>
+                    ))}
+                </div>
+              ))}
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
-      <Link href="/our-facilities">
-        <button className="view-all">VIEW ALL</button>
-      </Link>
+      </Swiper>
     </div>
   );
 };

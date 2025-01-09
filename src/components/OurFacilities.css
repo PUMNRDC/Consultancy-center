@@ -3,20 +3,28 @@
   margin: 5vw;
 }
 
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .scroll-container {
   display: flex;
-  flex-wrap: wrap;
+  transition: scroll 0.3s ease-in-out;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 1rem;
-  overflow: hidden;
-  white-space: nowrap;
+  width: 100%;
 }
 
 .facility-card {
-  flex: 0 0 22%;
-  margin: 0.5rem;
   background: url('/rectangles/background.svg') no-repeat center;
   background-size: contain;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 8px;
   height: 150px;
@@ -35,6 +43,25 @@
 .facility-card p {
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.navigation-circles {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: #0629B7;
 }
 
 .view-all {
