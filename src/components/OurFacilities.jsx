@@ -8,12 +8,12 @@ const FacilitiesSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const facilityData = [
-    { name: "Instrumentation Facilities", icon: "/instrumentation-facilities.png" },
-    { name: "Microbiology Department", icon: "/microbiology-department.png" },
-    { name: "Environmental Audit Laboratory", icon: "/environmental-audit-laboratory.png" },
-    { name: "Medical Diagnostics Facilities", icon: "/medical-diagnostics-facilities.png" },
-    { name: "Vehicle 3D Alignment Facility", icon: "/vehicle-3d-alignment-facility.png" },
-    { name: "Public Testing Laboratory", icon: "/public-testing-laboratory.png" },
+    { name: "Instrumentation Facilities", icon: "/Instrumentation-Facilities.png" },
+    { name: "Microbiology Department", icon: "/Microbiology-Department.png" },
+    { name: "Environmental Audit Laboratory", icon: "/Environmental-Audit-Laboratory.png" },
+    { name: "Medical Diagnostics Facilities", icon: "/Medical-Diagnostics-Facilities.png" },
+    { name: "Vehicle 3D Alignment Facility", icon: "/Vehicle-3D-Alignment-Facility.png" },
+    { name: "Public Testing Laboratory", icon: "/Public-Testing-Laboratory.png" },
     { name: "Chemical Testing Facility", icon: "/chemical-testing-facility.png" },
     { name: "Food Quality Analysis Center", icon: "/icons/food-quality-analysis-center.png" },
     { name: "Industrial Waste Management Lab", icon: "/industrial-waste-management-lab.png" },
