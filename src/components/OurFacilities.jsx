@@ -31,8 +31,6 @@ const FacilitiesSection = () => {
     { name: "AR/VR LAB", icon: "/AR-VR-LAB.png" },
     { name: "FabLab", icon: "/FabLab.png" },
     { name: "Registered Ethical Committee Human Animal Research", icon: "/Registered-Ethical-Committee-Human-Animal-Research.png" },
-    { name: "Civil Engineering Lab", icon: "/civil-engineering-lab.png" },
-    { name: "AI and Machine Learning Center", icon: "/ai-and-machine-learning-center.png" },
   ];
 
   const itemsPerSlide = 6;
