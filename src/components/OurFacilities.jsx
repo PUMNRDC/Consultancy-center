@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 
 const FacilitiesSection = () => {
   const trackRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const intervalRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const facilityData = [
     { name: "Instrumentation Facilities", icon: "/Instrumentation-Facilities.png" },
@@ -33,42 +34,40 @@ const FacilitiesSection = () => {
     { name: "Registered Ethical Committee Human Animal Research", icon: "/Registered-Ethical-Committee-Human-Animal-Research.png" },
   ];
 
-  const itemsPerSlide = 6;
-  const totalSlides = Math.ceil(facilityData.length / itemsPerSlide);
-
-  const goToSlide = (index) => {
+  const scrollTrack = () => {
     if (trackRef.current) {
-      trackRef.current.scrollTo({
-        left: index * 1200, // Adjust scroll position
-        behavior: "smooth",
-      });
+      trackRef.current.scrollLeft += 1;
+      if (trackRef.current.scrollLeft >= trackRef.current.scrollWidth / 2) {
+        trackRef.current.scrollLeft = 0; // Reset scroll for infinity loop
+      }
     }
-    setActiveIndex(index);
   };
 
+  useEffect(() => {
+    if (!isHovered) {
+      intervalRef.current = setInterval(scrollTrack, 50); // Speed of scrolling
+    }
+    return () => clearInterval(intervalRef.current);
+  }, [isHovered]);
+
   return (
-    <div className="facilities-section">
+    <div
+      className="facilities-section"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <h2>Our State of the Art Facilities</h2>
       <div className="underlineCollaborationsCarousel"></div>
       <div className="scroll-container" ref={trackRef}>
-        {facilityData.map((facility, index) => (
+        {[...facilityData, ...facilityData].map((facility, index) => (
           <div className="facility-card" key={index}>
             <img src={facility.icon} alt={facility.name} />
             <p>{facility.name}</p>
           </div>
         ))}
       </div>
-      <div className="navigation-circles">
-        {Array.from({ length: totalSlides }).map((_, index) => (
-          <div
-            key={index}
-            className={`circle ${index === activeIndex ? "active" : ""}`}
-            onClick={() => goToSlide(index)}
-          ></div>
-        ))}
-      </div>
       <Link href="/our-facilities">
-      <button className="view-all">VIEW ALL</button>
+        <button className="view-all">VIEW ALL</button>
       </Link>
     </div>
   );
