@@ -49,25 +49,57 @@ const FacultyConsultancy = () => {
     },
     {
       id: 7,
-      title: 'New Project 1',
-      description: 'Description for new project 1',
-      imgSrc: '/thumbnails/new_project_1.png',
-      link: '/consultancy/new-project-1',
+      title: 'ACCOMMODATION OPERATIONS & HYGIENE SAFETY TRAINING PROGRAMME',
+      description: 'Faculty of Hotel Management & Catering Technology',
+      imgSrc: '/thumbnails/fhmct.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/hotal%20management.pdf',
     },
     {
       id: 8,
-      title: 'New Project 2',
-      description: 'Description for new project 2',
-      imgSrc: '/thumbnails/new_project_2.png',
-      link: '/consultancy/new-project-2',
+      title: 'Consultancy Services in Restaurant Designing',
+      description: 'Faculty of Hotel Management & Catering Technology',
+      imgSrc: '/thumbnails/fhmct2.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/HOTEL%20MANAGEMENT.pdf',
     },
     {
       id: 9,
-      title: 'New Project 3',
-      description: 'Description for new project 3',
-      imgSrc: '/thumbnails/new_project_3.png',
-      link: '/consultancy/new-project-3',
+      title: 'First Aid & CPR Training',
+      description: 'Parul Institute of Nursing',
+      imgSrc: '/thumbnails/PIN.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/Commen%20Flyer%20for%20parul%20institute%20of%20nursing.pdf',
     },
+    {
+      id: 10,
+      title: 'Faculty of Agriculture',
+      imgSrc: '/thumbnails/faculty_of_agriculture.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20agriculture.pdf',
+    },
+    {
+      id: 11,
+      title: 'Faculty of Architecture & Planning',
+      imgSrc: '/thumbnails/faculty_of_architecture_planing.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20architecture%20&%20planing.pdf',
+    },
+    {
+      id: 12,
+      title: 'Faculty of Management Studies',
+      imgSrc: '/thumbnails/faculty_of_architecture_planing.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20management%20studies.pdf',
+    },
+    {
+      id: 13,
+      title: 'Industrial Ergonomic and Health Prevention Program',
+      description: 'Faculty of Physiotherapy',
+      imgSrc: '/thumbnails/Faculty-of-Physiotherapy.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/FACULTY%20OF%20PHYSIOTHERAPY.pdf',
+    },
+    {
+      id: 14,
+      title: 'Faculty of Social Work',
+      imgSrc: '/thumbnails/faculty_of_social_work.png',
+      link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20social%20work.pdf',
+    },
+
   ];
   const [visibleCards, setVisibleCards] = useState(6);
 
@@ -78,6 +110,8 @@ const FacultyConsultancy = () => {
   return (
     <section className={styles.container}>
       <h2 className={styles.heading}>Faculty Wise Consultancy Information</h2>
+      <div className="underlineCollaborationsCarousel"></div>
+
       <div className={styles.cardGrid}>
         {allCards.slice(0, visibleCards).map((card) => (
           <Link key={card.id} href={card.link} legacyBehavior>
