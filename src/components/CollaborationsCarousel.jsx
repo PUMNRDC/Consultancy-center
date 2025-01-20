@@ -65,19 +65,16 @@ const CollaborationsCarousel = () => {
               <img src="/LOGOS/apollo-hospital.png" alt="apollo-hospital" />
             </li>
             <li className="carousel-slide">
-              <img src="/LOGOS/avancon.png" alt="avancon" />
-            </li>
-            <li className="carousel-slide">
               <img src="/LOGOS/concord-biotech.png" alt="concord-biotech" />
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/curitex-medica.png" alt="curitex-medica" />
             </li>
             <li className="carousel-slide">
-              <img
-                src="/LOGOS/Analytical-Services.png"
-                alt="Analytical-Services"
-              />
+              <img src="/LOGOS/Analytical-Services.png" alt="Analytical-Services" />
+            <li className="carousel-slide">
+              <img src="/LOGOS/avancon.png" alt="avancon" />
+            </li>
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/GOGujrat.png" alt="GOGujrat" />
@@ -93,9 +90,7 @@ const CollaborationsCarousel = () => {
             </li>
             <li className="carousel-slide">
               <img
-                src="/LOGOS/Mylein-Health-Care.png"
-                alt="Mylein-Health-Care"
-              />
+                src="/LOGOS/Mylein-Health-Care.png" alt="Mylein-Health-Care" />
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/setco.svg" alt="setco" />

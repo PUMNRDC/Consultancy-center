@@ -9,6 +9,7 @@ import OurFacilities from"@/components/OurFacilities";
 import { Geist, Geist_Mono } from "next/font/google";
 import OurObjectives from "@/components/OurObjectives";
 import ConsultancyProjects from "@/components/ConsultancyProjects";
+import FacultyConsultancy from "@/components/FacultyConsultancy";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function Home() {
         <CollaborationsCarousel />
         <OurObjectives/>
         <OurFacilities/>
+        <FacultyConsultancy />
         <ConsultancyProjects />
         <ContactPageComponent />
         <FooterBar/>

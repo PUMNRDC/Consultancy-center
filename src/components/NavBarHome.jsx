@@ -67,21 +67,21 @@ const NavBarHome = () => {
       <div className={`drawer ${isOpen ? 'open' : ''}`}>
         <button className="close-drawer" onClick={toggleDrawer}>X</button>
         <ul>
-        <li><a href="/#ConsultancyHero">About</a></li>
+          <li><a href="/#ConsultancyHero">About</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
           <li><a href="/#OurClients">Clients</a></li>
           <li><a href="/#OurServices">Services</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
         <div className="navbar-supported-mobile">
-        <Link href="https://ic.gujarat.gov.in/" target="_blank" rel="noopener noreferrer" passHref>
-          <Image
-            src="/ic-white.svg"
-            alt="Supported Logo"
-            width={200}
-            height={50}
-            style={{ objectFit: 'contain' }} // Updated this line
-          />
+          <Link href="https://ic.gujarat.gov.in/" target="_blank" rel="noopener noreferrer" passHref>
+            <Image
+              src="/ic-white.svg"
+              alt="Supported Logo"
+              width={200}
+              height={50}
+              style={{ objectFit: 'contain' }} // Updated this line
+            />
           </Link>
         </div>
       </div>
