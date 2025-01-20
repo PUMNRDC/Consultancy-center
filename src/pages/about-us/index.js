@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NavBarHome from "@/components/NavBarHome";
 import ConsultancyHero from "@/components/ConsultancyHero";
-import ContactPageComponent from "@/components/ContactPageComponent";
+import ContactPageComponent from "@/components/Contact";
 import FooterBar from "@/components/footerBar";
 import { Geist, Geist_Mono } from "next/font/google";
 

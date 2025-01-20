@@ -1,0 +1,90 @@
+.container {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.title {
+    text-align: center;
+    color: #000; /* Blue color for the title */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tabs button {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0629B7; /* Blue text for buttons */
+}
+
+.tabs button:hover {
+    background-color: #e0e0e0;
+    color: #0629B7; /* Keep blue text on hover */
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    opacity: 1; /* Table starts visible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .table.show {
+    opacity: 1; /* Fade-in effect applied when the "show" class is added */
+  }
+
+.table th,
+.table td {
+    border: 1px solid #0629B7; /* Blue border for the table */
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #0629B7; /* Blue background for table headers */
+    color: white; /* White text for headers */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #e3f2fd; /* Light blue hover effect */
+}
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs button {
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

@@ -70,7 +70,7 @@ const ContactPageComponent = () => {
 
   return (
     <div className="contact-form-container">
-      <div className="contact-info">
+      <div className="Contact Us">
         <h2>Contact Us</h2>
         <p>Send us a message, and we'll get back to you shortly.</p>
       </div>
@@ -119,7 +119,7 @@ const ContactPageComponent = () => {
           }}
         />
         {errors.phoneNumber && <p className="error-flag">{errors.phoneNumber}</p>}
-
+        <br></br>
         <textarea
           name="additionalInformation"
           placeholder="Your message?"

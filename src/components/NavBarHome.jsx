@@ -43,11 +43,11 @@ const NavBarHome = () => {
           </Link>
         </div>
         <ul className="navbar-links">
-          <li><a href="/about">About</a></li>
-          <li><a href="/facilities">Facilities</a></li>
-          <li><a href="/clients">Clients</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact" className="cta">Contact Us</a></li>
+          <li><a href="/#ConsultancyHero">About</a></li>
+          <li><a href="/#Ourfacilities">Facilities</a></li>
+          <li><a href="/#OurClients">Clients</a></li>
+          <li><a href="/#OurServices">Services</a></li>
+          <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
           
         <div className="hamburger" onClick={toggleDrawer}>
@@ -67,10 +67,11 @@ const NavBarHome = () => {
       <div className={`drawer ${isOpen ? 'open' : ''}`}>
         <button className="close-drawer" onClick={toggleDrawer}>X</button>
         <ul>
-          <li><a href="/equipments">Equipments</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/pricing">Pricing</a></li>
-          <li><a href="#booking" className="cta">Resource Booking</a></li>
+        <li><a href="/#ConsultancyHero">About</a></li>
+          <li><a href="/#Ourfacilities">Facilities</a></li>
+          <li><a href="/#OurClients">Clients</a></li>
+          <li><a href="/#OurServices">Services</a></li>
+          <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
         <div className="navbar-supported-mobile">
         <Link href="https://ic.gujarat.gov.in/" target="_blank" rel="noopener noreferrer" passHref>

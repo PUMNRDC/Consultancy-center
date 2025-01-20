@@ -1,6 +1,6 @@
 /* General container styles */
 .contact-form-container {
-  padding-top: 10rem !important;
+  padding-top: 5rem !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -176,7 +176,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: border-color 0.3s ease;
   font-family: inherit;
 }

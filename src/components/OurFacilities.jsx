@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -46,8 +44,17 @@ const FacilitiesSection = () => {
         {Array.from({ length: Math.ceil(facilityData.length / itemsPerSlide) }).map((_, slideIndex) => (
           <SwiperSlide key={slideIndex}>
             <div className="slide">
+              {/* Render rows within each slide */}
               {Array.from({ length: rowsPerSlide }).map((_, rowIndex) => (
-                <div className="row" key={rowIndex} style={{ display: "flex", justifyContent: "space-evenly" }}>
+                <div
+                  key={rowIndex}
+                  className="row"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    gap: "2.5rem",
+                  }}
+                >
                   {facilityData
                     .slice(
                       slideIndex * itemsPerSlide + rowIndex * itemsPerRow,
