@@ -15,7 +15,7 @@ const FacultyConsultancy = () => {
     {
       id: 2,
       title: 'Micro-Nano Research',
-      description: 'Research & Development Center',
+      description: '& Development Center',
       imgSrc: '/thumbnails/micro-nano.png',
       link: 'https://paruluniversity.ac.in/consultancycenter/pdf/Brochure%20of%20Micro-Nano%20Research%20&%20Development%20Centre.pdf',
     },
