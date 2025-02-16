@@ -72,9 +72,10 @@ const CollaborationsCarousel = () => {
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/Analytical-Services.png" alt="Analytical-Services" />
+              </li>
             <li className="carousel-slide">
               <img src="/LOGOS/avancon.png" alt="avancon" />
-            </li>
+            
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/GOGujrat.png" alt="GOGujrat" />

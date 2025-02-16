@@ -78,7 +78,7 @@ const ContactPageComponent = () => {
         <input
           type="text"
           name="firstName"
-          placeholder="First name*"
+          placeholder="First Name"
           value={formData.firstName}
           onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
           required
@@ -88,7 +88,7 @@ const ContactPageComponent = () => {
         <input
           type="text"
           name="lastName"
-          placeholder="Last name*"
+          placeholder="Last Name"
           value={formData.lastName}
           onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
           required
@@ -97,8 +97,8 @@ const ContactPageComponent = () => {
 
         <input
           type="email"
+          placeholder="Your Email"
           name="email"
-          placeholder="Email address*"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required
@@ -108,10 +108,13 @@ const ContactPageComponent = () => {
         <PhoneInput
           country={"in"}
           value={formData.phoneNumber}
+          
           onChange={handlePhoneChange}
           inputStyle={{
             width: "100%",
             padding: "15px",
+            paddingLeft: "50px",
+            height: "50px",
             fontSize: "16px",
             borderRadius: "4px",
             border: "1px solid #ccc",
