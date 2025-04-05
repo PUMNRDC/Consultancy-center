@@ -12,7 +12,27 @@ const FacilitiesSection = () => {
     { name: "Environmental Audit Laboratory", icon: "/Environmental-Audit-Laboratory.png" },
     { name: "Medical Diagnostics Facilities", icon: "/Medical-Diagnostics-Facilities.png" },
     { name: "Vehicle 3D Alignment Facility", icon: "/Vehicle-3D-Alignment-Facility.png" },
-    { name: "Public Testing Laboratory", icon: "/Public-Testing-Laboratory.png" },
+
+    { name: "AR-VR Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "ML Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "IPR Filing", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Vertical Machining Center", icon: "/Public-Testing-Laboratory.png" },
+    { name: "VMC", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Clinical Trial Facilities", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Drug Formulation Facilty", icon: "/Public-Testing-Laboratory.png" },
+    { name: "PLC Automation Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Company Formation & Legal Services", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Gait ON System for Posture Analysis", icon: "/Public-Testing-Laboratory.png" },
+    { name: "3D Modelling & Analysis Software", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Metal Workshop", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Film Studio", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Audio Recording Studio", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Forensic Sceince Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Advanced Chemistry Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Soil Testing Lab", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Structure Analysis", icon: "/Public-Testing-Laboratory.png" },
+
+
     { name: "Electrical Machines Laboratory", icon: "/Electrical-Machines-Laboratory.png" },
     { name: "Advanced Manufacturing Process Laboratory", icon: "/Advanced-Manufacturing-Process-Laboratory.png" },
     { name: "Industrial Automation Control Laboratory", icon: "/Industrial-Automation-Control-Laboratory.png" },
@@ -30,7 +50,7 @@ const FacilitiesSection = () => {
   const itemsPerSlide = itemsPerRow * rowsPerSlide;
 
   return (
-    <div className="facilities-section">
+    <div className="facilities-section" id="Ourfacilities">
       <h2>Our State of the Art Facilities</h2>
       <div className="underlineCollaborationsCarousel"></div>
       <Swiper

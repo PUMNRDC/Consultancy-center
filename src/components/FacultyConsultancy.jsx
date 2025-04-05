@@ -83,7 +83,7 @@ const FacultyConsultancy = () => {
     {
       id: 12,
       title: 'Faculty of Management Studies',
-      imgSrc: '/thumbnails/faculty_of_architecture_planing.png',
+      imgSrc: '/thumbnails/faculty_management_studies.png',
       link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20management%20studies.pdf',
     },
     {
@@ -99,7 +99,48 @@ const FacultyConsultancy = () => {
       imgSrc: '/thumbnails/faculty_of_social_work.png',
       link: 'https://paruluniversity.ac.in/consultancycenter/pdf/faculty%20of%20social%20work.pdf',
     },
-
+    {
+      id: 15,
+      title: 'Cyber Security Consultancy',
+      imgSrc: '/thumbnails/cyber_security.png',
+      link: '',
+    },
+    {
+      id: 16,
+      title: 'VMC Machinery Services',
+      imgSrc: '/thumbnails/vmc_machinery.png',
+      link: '',
+    },
+    {
+      id: 17,
+      title: 'Environment Consultancy',
+      imgSrc: '/thumbnails/environmentconsultancy.png',
+      link: '',
+    },
+    {
+      id: 18,
+      title: 'Faculty of Architecture & Planning',
+      imgSrc: '/thumbnails/fap.png',
+      link: '',
+    },
+    {
+      id: 19,
+      title: 'SEO Services',
+      imgSrc: '/thumbnails/SEO_services.png',
+      link: '',
+    },
+    {
+      id: 20,
+      title: 'Faculty of Pharmacy',
+      imgSrc: '/thumbnails/fop.png',
+      link: '',
+    },
+    {
+      id: 21,
+      title: 'Faculty of Management Studies',
+      imgSrc: '/thumbnails/fms.png',
+      link: '',
+    },
   ];
   const [visibleCards, setVisibleCards] = useState(6);
 
