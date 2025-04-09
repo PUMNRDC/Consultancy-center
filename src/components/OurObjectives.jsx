@@ -38,7 +38,7 @@ const OurObjectives = () => {
           <div className="icon">
             <Image src="/LaboratoryResource.png" alt="Laboratory Resource Sharing" width={50} height={50} />
           </div>
-          <h3>Laboratory Resouce Sharing</h3>
+          <h3>Laboratory Resource Sharing</h3>
           <p>To offer services to industries and other education and research organizations as testing/consultancy services.</p>
         </div>
         <div className="objective-item additional-services">

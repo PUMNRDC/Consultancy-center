@@ -9,7 +9,7 @@ const FacilitiesSection = () => {
   const facilityData = [
     { name: "Instrumentation Facilities", icon: "/Instrumentation-Facilities.png" },
     { name: "Microbiology Department", icon: "/Microbiology-Department.png" },
-    { name: "Environmental Audit Laboratory", icon: "/Environmental-Audit-Laboratory.png" },
+    { name: "Environmental Audit Services", icon: "/Environmental-Audit-Laboratory.png" },
     { name: "Medical Diagnostics Facilities", icon: "/Medical-Diagnostics-Facilities.png" },
     { name: "Vehicle 3D Alignment Facility", icon: "/Vehicle-3D-Alignment-Facility.png" },
 
@@ -31,12 +31,10 @@ const FacilitiesSection = () => {
     { name: "Advanced Chemistry Lab", icon: "/Public-Testing-Laboratory.png" },
     { name: "Soil Testing Lab", icon: "/Public-Testing-Laboratory.png" },
     { name: "Structure Analysis", icon: "/Public-Testing-Laboratory.png" },
-
-
-    { name: "Electrical Machines Laboratory", icon: "/Electrical-Machines-Laboratory.png" },
-    { name: "Advanced Manufacturing Process Laboratory", icon: "/Advanced-Manufacturing-Process-Laboratory.png" },
-    { name: "Industrial Automation Control Laboratory", icon: "/Industrial-Automation-Control-Laboratory.png" },
-    { name: "Industrial Waste Management Laboratory", icon: "/Industrial-Waste-Management-Laboratory.png" },
+    { name: "Electrical Machines Services", icon: "/Electrical-Machines-Laboratory.png" },
+    { name: "Advanced Manufacturing Process Services", icon: "/Advanced-Manufacturing-Process-Laboratory.png" },
+    { name: "Industrial Automation Control Services", icon: "/Industrial-Automation-Control-Laboratory.png" },
+    { name: "Industrial Waste Management Services", icon: "/Industrial-Waste-Management-Laboratory.png" },
     { name: "Micro-Nano R&D", icon: "/Micro-Nano-RNDC.png" },
     { name: "Robotics And Automation Lab", icon: "/Robotics-And-Automation-Lab.png" },
     { name: "IOT Lab", icon: "/IOT-Lab.png" },
