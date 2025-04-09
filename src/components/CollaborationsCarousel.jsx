@@ -87,9 +87,6 @@ const CollaborationsCarousel = () => {
               <img src="/LOGOS/ic-bio.png" alt="ic-bio" />
             </li>
             <li className="carousel-slide">
-              <img src="/LOGOS/isro.png" alt="isro" />
-            </li>
-            <li className="carousel-slide">
               <img
                 src="/LOGOS/Mylein-Health-Care.png" alt="Mylein-Health-Care" />
             </li>
