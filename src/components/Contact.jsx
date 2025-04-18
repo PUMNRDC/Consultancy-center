@@ -69,7 +69,7 @@ const ContactPageComponent = () => {
   };
 
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="ContactUs">
       <div className="Contact Us">
         <h2>Contact Us</h2>
         <p>Send us a message, and we'll get back to you shortly.</p>

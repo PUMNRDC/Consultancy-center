@@ -1,53 +1,88 @@
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const OurObjectives = () => {
+  const objectives = [
+    {
+      icon: "/developing-networks.png",
+      className: "research-support",
+      title: "Joint Research & Publications",
+      description: "To support research in advanced areas of science and technology.",
+    },
+    {
+      icon: "/consultancyprojects.png",
+      className: "innovative-development",
+      title: "Consultancy Projects",
+      description:
+        "To offer support to R&D centres & industries towards design & development of their products.",
+    },
+    {
+      icon: "/training-capacity-building.png",
+      className: "training-capacity-building",
+      title: "Training & Capacity Building",
+      description:
+        "To arrange specialized training programs for technicians working on instruments in academic institutions / small industries.",
+    },
+    {
+      icon: "/Innovative-development.png",
+      className: "developing-networks",
+      title: "Innovative Product Design & Development",
+      description: "To build a strong industry academic network.",
+    },
+    {
+      icon: "/LaboratoryResource.png",
+      className: "laboratory-resource",
+      title: "Laboratory Resource Sharing",
+      description:
+        "To offer services to industries and other education and research organizations as testing/consultancy services.",
+    },
+    {
+      icon: "/additional-services.png",
+      className: "additional-services",
+      title: "Additional Services",
+      description:
+        "To offer customised services to industries and other education and research organizations as testing/consultancy services as per their needs.",
+    },
+  ];
+
   return (
     <section className="objectives-section">
       <h2 className="title">Our Objectives</h2>
       <div className="underlineCollaborationsCarousel"></div>
+
       <div className="objectives-container">
-        <div className="objective-item research-support">
-          <div className="icon">
-            <Image src="/developing-networks.png" alt="Joint Research & Publications" width={50} height={50} />
-          </div>
-          <h3>Joint Research & Publications</h3>
-          <p>To support research in advanced areas of science and technology.</p>
-        </div>
-        <div className="objective-item innovative-development">
-          <div className="icon">
-            <Image src="/consultancyprojects.png" alt="Consultancy Projects" width={50} height={50} />
-          </div>
-          <h3>Consultancy Projects</h3>
-          <p>To offer support to R&D centres & industries towards design & development of their products.</p>
-        </div>
-        <div className="objective-item training-capacity-building">
-          <div className="icon">
-            <Image src="/training-capacity-building.png" alt="Training & Capacity Building" width={50} height={50} />
-          </div>
-          <h3>Training & Capacity Building</h3>
-          <p>To arrange specialized training programs for technicians working on instruments in academic institutions / small industries.</p>
-        </div>
-        <div className="objective-item developing-networks">
-          <div className="icon">
-            <Image src="/Innovative-development.png" alt="Innovative Development" width={50} height={50} />
-          </div>
-          <h3>Innovative Product Design & Development</h3>
-          <p>To build a strong industry academic network.</p>
-        </div>
-        <div className="objective-item laboratory-resource">
-          <div className="icon">
-            <Image src="/LaboratoryResource.png" alt="Laboratory Resource Sharing" width={50} height={50} />
-          </div>
-          <h3>Laboratory Resource Sharing</h3>
-          <p>To offer services to industries and other education and research organizations as testing/consultancy services.</p>
-        </div>
-        <div className="objective-item additional-services">
-          <div className="icon">
-            <Image src="/additional-services.png" alt="Additional Services" width={50} height={50} />
-          </div>
-          <h3>Additional Services</h3>
-          <p>To offer customised services to industries and other education and research organizations as testing/consultancy services as per their needs.</p>
-        </div>
+        {objectives.map((obj, index) => (
+          <motion.div
+            key={index}
+            className={`objective-item ${obj.className}`}
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div className="icon">
+              <Image
+                src={obj.icon}
+                alt={obj.title}
+                width={50}
+                height={50}
+                priority
+              />
+            </div>
+            <h3>{obj.title}</h3>
+            <p>{obj.description}</p>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

@@ -43,11 +43,11 @@ const NavBarHome = () => {
           </Link>
         </div>
         <ul className="navbar-links">
-          <li><a href="/#ConsultancyHero">About</a></li>
+          <li><a href="/#AboutUs">About</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
           <li><a href="/#OurClients">Clients</a></li>
           <li><a href="/#OurServices">Services</a></li>
-          <li><a href="/#contact" className="cta">Contact Us</a></li>
+          <li><a href="/#ContactUs" className="cta">Contact Us</a></li>
         </ul>
           
         <div className="hamburger" onClick={toggleDrawer}>

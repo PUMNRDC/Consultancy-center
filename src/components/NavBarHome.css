@@ -75,6 +75,11 @@
   border-bottom: 1px #0629b7;
 }
 
+
+.navbar.scrolled .cta {
+  color: white !important;
+}
+
 /* CTA button style */
 .cta {
   padding: 10px 20px;
@@ -222,4 +227,8 @@
   .hamburger {
     display: block; /* Show hamburger in mobile view */
   }
+}
+
+.navbar.scrolled .navbar-links li .cta {
+  color: white !important;
 }

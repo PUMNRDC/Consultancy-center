@@ -149,7 +149,7 @@ const FacultyConsultancy = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="OurServices">
       <h2 className={styles.heading}>Faculty Wise Consultancy Information</h2>
       <div className="underlineCollaborationsCarousel"></div>
 

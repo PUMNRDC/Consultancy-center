@@ -1,8 +1,27 @@
+"use client";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const ConsultancyHero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (imageLoaded) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [imageLoaded, controls]);
+  
   return (
-    <section className="about-us">
+    <motion.section
+      className="about-us"
+      id="AboutUs"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="about-us-content">
         <h2>About Us</h2>
         <div className="underlineCollaborationsCarousel"></div>
@@ -28,16 +47,22 @@ const ConsultancyHero = () => {
              to achieve their goals.
              </p>
           </div>
-      <div className="about-us-image">
+          <motion.div
+        className="about-us-image"
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <Image
           src="/AboutBanner.png"
           alt="Parul University Consultancy Center"
           width={800}
           height={400}
           className="about-image"
+          onLoadingComplete={() => setImageLoaded(true)}
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

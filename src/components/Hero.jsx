@@ -8,9 +8,7 @@ const Hero = () => {
           <h1>Welcome to</h1>
           <h2>Consultancy Centre of Parul University</h2>
           <div className="Buttons">
-            <a href="/contact" className="ctaBtn">GET QUOTE</a>
-           
-         
+            <a href="/#ContactUs" className="ctaBtn">GET QUOTE</a>
           </div>
         </div>
         <Image 

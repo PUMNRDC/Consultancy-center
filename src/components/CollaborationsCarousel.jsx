@@ -55,7 +55,7 @@ const CollaborationsCarousel = () => {
   }, []);
 
   return (
-    <div className="collaborations-container">
+    <div className="collaborations-container" id="OurClients">
       <h2>Our Satisfied Clients</h2>
       <div className="underlineCollaborationsCarousel"></div>
       <div className="carousel">
@@ -70,11 +70,12 @@ const CollaborationsCarousel = () => {
             <li className="carousel-slide">
               <img src="/LOGOS/curitex-medica.png" alt="curitex-medica" />
             </li>
+         
             <li className="carousel-slide">
               <img src="/LOGOS/Analytical-Services.png" alt="Analytical-Services" />
               </li>
             <li className="carousel-slide">
-              <img src="/LOGOS/avancon.png" alt="avancon" />
+              <img src="/LOGOS/avacon.png" alt="avacon" />
             
             </li>
             <li className="carousel-slide">
@@ -89,6 +90,9 @@ const CollaborationsCarousel = () => {
             <li className="carousel-slide">
               <img
                 src="/LOGOS/Mylein-Health-Care.png" alt="Mylein-Health-Care" />
+            </li>
+            <li className="carousel-slide">
+              <img src="/LOGOS/sharma-ortho.png" alt="Sharma Orthopedic" />
             </li>
             <li className="carousel-slide">
               <img src="/LOGOS/setco.svg" alt="setco" />
