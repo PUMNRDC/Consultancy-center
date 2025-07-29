@@ -56,7 +56,7 @@ const OurObjectives = () => {
   ];
 
   return (
-    <section className="objectives-section">
+    <section className="objectives-section" id="OurObjectives">
       <h2 className="title">Our Objectives</h2>
       <div className="underlineCollaborationsCarousel"></div>
 
