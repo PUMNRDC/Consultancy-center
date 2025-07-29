@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -42,9 +42,22 @@ const FacilitiesSection = () => {
     { name: "Technology Transfer Services", icon: "/Technology-Transfer-Services.png" },
   ];
 
-  const itemsPerRow = 4; // Number of items per row
-  const rowsPerSlide = 2; // Number of rows per slide
-  const itemsPerSlide = itemsPerRow * rowsPerSlide;
+  const [itemsPerSlide, setItemsPerSlide] = useState(8); // default (4x2 grid)
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerSlide(4); // 2x2 or 1x4 on mobile
+      } else {
+        setItemsPerSlide(8); // 4x2 on desktop
+      }
+    };
+
+    handleResize(); // set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="facilities-section" id="Ourfacilities">
@@ -61,30 +74,14 @@ const FacilitiesSection = () => {
         {Array.from({ length: Math.ceil(facilityData.length / itemsPerSlide) }).map((_, slideIndex) => (
           <SwiperSlide key={slideIndex}>
             <div className="slide">
-              {/* Render rows within each slide */}
-              {Array.from({ length: rowsPerSlide }).map((_, rowIndex) => (
-                <div
-                  key={rowIndex}
-                  className="row"
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    gap: "2.5rem",
-                  }}
-                >
-                  {facilityData
-                    .slice(
-                      slideIndex * itemsPerSlide + rowIndex * itemsPerRow,
-                      slideIndex * itemsPerSlide + (rowIndex + 1) * itemsPerRow
-                    )
-                    .map((facility, index) => (
-                      <div className="facility-card" key={index} style={{ textAlign: "center" }}>
-                        <img src={facility.icon} alt={facility.name} style={{ width: "80px", height: "80px" }} />
-                        <p>{facility.name}</p>
-                      </div>
-                    ))}
-                </div>
-              ))}
+              {facilityData
+                .slice(slideIndex * itemsPerSlide, (slideIndex + 1) * itemsPerSlide)
+                .map((facility, index) => (
+                  <div className="facility-card" key={index}>
+                    <img src={facility.icon} alt={facility.name} />
+                    <p>{facility.name}</p>
+                  </div>
+                ))}
             </div>
           </SwiperSlide>
         ))}

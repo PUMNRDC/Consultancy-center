@@ -1,7 +1,6 @@
 .facilities-section {
   text-align: center;
   margin: 5vw;
-  padding: 2rem 1rem;
 }
 
 .scroll-wrapper {
@@ -16,23 +15,25 @@
 
 .slide {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .facility-card {
   background: url('/rectangles/background.svg') no-repeat center;
   background-size: contain;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   border-radius: 8px;
-  height: 150px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .facility-card img {
@@ -44,6 +45,8 @@
 .facility-card p {
   font-size: 0.9rem;
   font-weight: bold;
+  line-height: 1.2;
+  max-width: 90%;
 }
 
 .navigation-circles {
@@ -76,21 +79,14 @@
   text-transform: uppercase;
 }
 
-/* Mobile responsive fixes for overlapping */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .facilities-section {
     margin: 2rem 1rem;
-    padding: 1rem 0.5rem;
-  }
-
-  .slide {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    padding: 0 0.5rem;
+    padding: 0;
   }
 
   .facility-card {
-    height: auto;
     min-height: 120px;
     padding: 1rem 0.5rem;
     background-size: cover;
@@ -104,41 +100,7 @@
   }
 
   .facility-card p {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    word-wrap: break-word;
-  }
-}
-
-@media (max-width: 480px) {
-  .facilities-section {
-    margin: 1rem 0.5rem;
-    padding: 0.5rem 0;
-  }
-
-  .slide {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    padding: 0 0.25rem;
-  }
-
-  .facility-card {
-    min-height: 100px;
-    padding: 0.75rem 0.5rem;
-  }
-
-  .facility-card img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .facility-card p {
     font-size: 0.75rem;
+    line-height: 1.1;
   }
-}
-
-/* Prevent horizontal overflow */
-.facilities-section * {
-  max-width: 100%;
-  box-sizing: border-box;
 }
