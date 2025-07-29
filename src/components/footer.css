@@ -59,8 +59,8 @@
 
 .footer-social-icons {
   display: flex;
-  gap: 5px;
-  margin-top: 1rem;
+  gap: 40px;
+  margin-top: 1.5rem;
   color: white !important;
 }
 
@@ -70,7 +70,20 @@
 
 .footer-social-icons a {
   font-size: 1.8rem;
-  color: white !important; 
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #0077b5 !important; /* LinkedIn blue on hover */
+}
+
+.footer-social-icons a[aria-label="WhatsApp"]:hover {
+  color: #25D366 !important; /* WhatsApp green on hover */
+}
+
+.footer-social-icons a[aria-label="Instagram"]:hover {
+  color: #E4405F !important; /* Instagram gradient color on hover */
 }
 
 @media (min-width: 768px) {

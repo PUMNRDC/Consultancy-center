@@ -35,7 +35,7 @@ const NavBarHome = () => {
             <Image 
               src={scrolled ? '/Parul-black.svg':'/parul.svg' }
               alt="Logo"
-              width={325} 
+              width={225} 
               height={50}
               style={{ objectFit: 'contain' }} // Updated this line
               priority={true}

@@ -8,6 +8,7 @@ import CollaborationsCarousel from "@/components/CollaborationsCarousel";
 import OurFacilities from"@/components/OurFacilities";
 import { Geist, Geist_Mono } from "next/font/google";
 import OurObjectives from "@/components/OurObjectives";
+import Gallery from "@/components/Gallery";
 import ConsultancyProjects from "@/components/ConsultancyProjects";
 import FacultyConsultancy from "@/components/FacultyConsultancy";
 
@@ -41,6 +42,7 @@ export default function Home() {
         <Hero/>
         <ConsultancyHero />
         <CollaborationsCarousel />
+        <Gallery />
         <OurObjectives/>
         <OurFacilities/>
         <FacultyConsultancy />

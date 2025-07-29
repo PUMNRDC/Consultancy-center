@@ -6,13 +6,14 @@ const FooterBar = () => {
   const handleLinkClick = (e, id) => {
     e.preventDefault();
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  }; // Add closing bracket here
+  };
 
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
           <img src='/parul.svg' alt="Parul University" className="pu_logo" />
+         
         </div>
         <div className="footer-links">
           <h4 className="QuickLinks">Quick links</h4>
@@ -44,6 +45,17 @@ const FooterBar = () => {
           <h4 className="GetinTouch">Get in Touch:<br /></h4>
           <p className="contactdetails" > <a href="mailto:consultancy@paruluniversity.ac.in">Email: consultancy@paruluniversity.ac.in</a><br/>
           </p>
+           <div className="footer-social-icons">
+            <a href="https://wa.me/+917486018533" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i className="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/consultancy-center-b06714343" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/pu_consultancycenter/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

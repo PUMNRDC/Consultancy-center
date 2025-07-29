@@ -118,82 +118,107 @@
     .overlay {
       display: none;
     }
-  
+
     .hero {
       position: relative;
       width: 100%;
-      height: 100vh; /* Full screen height */
+      height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;  
       overflow: hidden;
-      padding: 1em;
+      padding: 1rem;
       background-image: url('https://i.ibb.co/xjm9Srj/Hero-bg-mobile.png');
       background-size: cover;
-      background-attachment: fixed; /* Parallax effect */
+      background-position: center;
+      background-attachment: scroll;
     }
-  
+
+    .heroContent {
+      padding: 0 1rem;
+      max-width: 100%;
+    }
+
     .heroContent h1 {
-      font-size: 1.8rem;
-    }
-    .heroContent h2 .break {
-      display: none;
-      text-align: center; /* Forces the content to start on a new line */
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      margin-bottom: 0.5rem;
     }
     
-  
+    .heroContent h2 .break {
+      display: none;
+    }
+    
     .heroContent h2 {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 6vw, 2rem);
+      margin-bottom: 2rem;
+      line-height: 1.2;
+      word-wrap: break-word;
     }
-  
+
+    .Buttons {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
     .ctaBtn {
-      padding: 0.8rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       font-size: 0.9rem;
+      min-width: 140px;
     }
-    .brochureBtn {
-      padding: 0.8rem 2rem;
+    
+    .BrochureBtn {
+      padding: 0.75rem 1.5rem;
       font-size: 0.9rem;
     }
   }
-  
+
   @media (max-width: 480px) {
-  
     .overlay {
       display: none;
     }
+    
     .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Full screen height */
-      display: flex;
-      align-items: center;
-      justify-content: center;  
-      overflow: hidden;
-      background-image: "/herobg.png";
+      height: 60vh;
+      background-image: url('https://i.ibb.co/xjm9Srj/Hero-bg-mobile.png');
       background-size: cover;
-      background-attachment: fixed; /* Parallax effect */
+      background-position: center;
+      background-attachment: scroll;
     }
     
+    .heroContent {
+      padding: 0 0.5rem;
+    }
     
     .heroContent h1 {
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 5vw, 1.2rem);
     }
-    .heroContent h2 .break {
-      display: none; /* Forces the content to start on a new line */
-    }
-  
+
     .heroContent h2 {
-      font-size: 1.8rem;
+      font-size: clamp(1.25rem, 7vw, 1.8rem);
       font-weight: 600;
     }
-  
+
     .ctaBtn {
       padding: 0.6rem 1.2rem;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
+      min-width: 120px;
     }
+    
     .BrochureBtn {
-      padding: 0.6rem 1.5rem;
-      font-size: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  /* Additional small mobile optimization */
+  @media (max-width: 375px) {
+    .hero {
+      height: 50vh;
+    }
+    
+    .heroContent h2 {
+      font-size: clamp(1.1rem, 6vw, 1.5rem);
     }
   }
   
