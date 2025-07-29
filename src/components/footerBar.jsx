@@ -12,7 +12,7 @@ const FooterBar = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src='/parul.svg' alt="Parul University" className="pu_logo" />
+          <img src='/PU.png' alt="Parul University" className="pu_logo" />
          
         </div>
         <div className="footer-links">

@@ -42,11 +42,11 @@ const NavBarHome = () => {
             />
           </Link>
         </div>
-         <ul>
-          <li><a href="/#ConsultancyHero">About</a></li>
+        <ul className="navbar-links">
+          <li><a href="/#AboutUs">About</a></li>
           <li><a href="/#OurClients">Clients</a></li>
-          <li><a href="/#OurObjectives">Services</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
+          <li><a href="/#OurServices">Services</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
           
@@ -67,10 +67,10 @@ const NavBarHome = () => {
       <div className={`drawer ${isOpen ? 'open' : ''}`}>
         <button className="close-drawer" onClick={toggleDrawer}>X</button>
         <ul>
-          <li><a href="/#ConsultancyHero">About</a></li>
+           <li><a href="/#AboutUs">About</a></li>
           <li><a href="/#OurClients">Clients</a></li>
-          <li><a href="/#OurObjectives">Services</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
+          <li><a href="/#OurServices">Services</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
        

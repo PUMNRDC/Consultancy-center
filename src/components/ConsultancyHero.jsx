@@ -22,7 +22,7 @@ const ConsultancyHero = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="about-us-content">
+      <div className="about-us-content" id="AboutUs">
         <h2>About Us</h2>
         <div className="underlineCollaborationsCarousel"></div>
         <p>
