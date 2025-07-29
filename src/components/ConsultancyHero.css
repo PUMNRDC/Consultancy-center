@@ -11,6 +11,11 @@
     max-width: 60vw;
     margin-bottom: 30px;
   }
+  @media (max-width: 768px) {
+    .about-us-content {
+      max-width: 90vw;
+    }
+  }
   
   .about-us-content h2 {
     font-size: 36px;
@@ -30,3 +35,4 @@
     justify-content: center;
   }
   
+
