@@ -21,9 +21,7 @@
   width: 10%;
   height: 4px;
   background-color: #0629B7;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  align-self: center;
+  margin: 10px auto 30px auto; /* Top, horizontal auto-center, bottom */
 }
 
 .carousel {
