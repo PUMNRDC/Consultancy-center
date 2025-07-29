@@ -73,17 +73,7 @@ const NavBarHome = () => {
           <li><a href="/#OurServices">Services</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
-        <div className="navbar-supported-mobile">
-          <Link href="https://ic.gujarat.gov.in/" target="_blank" rel="noopener noreferrer" passHref>
-            <Image
-              src="/ic-white.svg"
-              alt="Supported Logo"
-              width={200}
-              height={50}
-              style={{ objectFit: 'contain' }} // Updated this line
-            />
-          </Link>
-        </div>
+       
       </div>
     </>
   );

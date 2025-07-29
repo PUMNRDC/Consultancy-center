@@ -94,13 +94,6 @@
   background-color: #0629b7; /* Darker shade on hover */
 }
 
-/* Supported section in the navbar */
-.navbar-supported {
-  font-size: 12px;
-  text-align: right;
-  color: inherit;
-}
-
 .navbar.scrolled .navbar-supported {
   color: black;
 }
@@ -176,8 +169,8 @@
 .drawer ul li .cta {
   margin: 0 auto;
   margin-bottom: 2em;
-  padding: 5px 10px;
-  background-color: #DC2626;
+  padding: 10px 20px;
+  background-color: #0629B7;
   color: white !important;
   border-radius: 5px;
   font-weight: 600;
