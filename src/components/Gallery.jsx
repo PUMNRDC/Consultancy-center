@@ -17,23 +17,12 @@ const Gallery = ({
     const initialImages = imageUrls && imageUrls.length > 0 
       ? imageUrls 
       : [
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/MOU%20Post%206%20%281%29.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/MoU%20Post%20%281%29.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/MoU3-1.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/MoU3.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/MoU4_DIAMINES%20%281%29.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/1751364040384.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/1751364040625.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/1751364041043.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC00433.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC00435.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC00565.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC00572%20%281%29.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC00705.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC04086.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC07994.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC08098.jpg',
-          'https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/DSC08177.jpg',
+          'https://i.ibb.co/2HhpYfH/Mo-U-Post1.jpg',
+          'https://i.ibb.co/hRsh8LNf/Mo-U-Post2.jpg',
+          'https://i.ibb.co/v6BvCXbH/Mo-U-Post3.jpg',
+          'https://i.ibb.co/zHnPF75G/Mo-U-Post4.jpg',
+          'https://i.ibb.co/HL4P790Y/Mo-U-Post5.jpg',
+          'https://i.ibb.co/cX8tRLDG/Mo-U-Post6.jpg',
         ];
     
     setImages(initialImages);
