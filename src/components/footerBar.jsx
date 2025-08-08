@@ -22,7 +22,7 @@ const FooterBar = () => {
               <Link href="https://consultancy.paruluniversity.ac.in/#ContactUs">Get a Quote</Link>
             </li>
             <li>
-              <Link href="https://consultancy.paruluniversity.ac.in/#WhoWeAre">Who We Are</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#AboutUs">Who We Are</Link>
             </li>
             <li>
               <Link href="https://consultancy.paruluniversity.ac.in/#Ourfacilities">Our Facilties</Link>
