@@ -23,6 +23,17 @@ const Gallery = ({
           'https://i.ibb.co/zHnPF75G/Mo-U-Post4.jpg',
           'https://i.ibb.co/HL4P790Y/Mo-U-Post5.jpg',
           'https://i.ibb.co/cX8tRLDG/Mo-U-Post6.jpg',
+          'https://i.ibb.co/DH80zkLx/1.jpg',
+          'https://i.ibb.co/V0NtpJRz/2.jpg',
+          'https://i.ibb.co/JwKH5vX1/3.jpg',
+          'https://i.ibb.co/h1rhVnk3/4.jpg',
+          'https://i.ibb.co/dw9Yqr52/5.jpg',
+          'https://i.ibb.co/60rY8mLX/6.jpg',
+          'https://i.ibb.co/7x4st8KT/7.jpg',
+          'https://i.ibb.co/Lzwg7SFs/8.jpg',
+          'https://i.ibb.co/VW18XQ3K/9.jpg',
+          'https://i.ibb.co/NdSCz432/10.jpg',
+          'https://i.ibb.co/CpS4NrGm/11.jpg',
         ];
     
     setImages(initialImages);
