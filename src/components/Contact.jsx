@@ -29,38 +29,40 @@ const ContactPageComponent = () => {
     return Object.keys(formErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validateForm()) return;
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!validateForm()) return;
 
-    setIsLoading(true);
-    const formPayload = new FormData();
-    formPayload.append("formData", JSON.stringify(formData));
+  setIsLoading(true);
 
-    try {
-      const response = await fetch("https://consultancyserver.onrender.com/api/send_email", {
-        method: "POST",
-        body: formPayload,
+  try {
+    const response = await fetch("https://consultancyserver.onrender.com/api/send_email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ formData: JSON.stringify(formData) })
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        additionalInformation: "",
       });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phoneNumber: "",
-          additionalInformation: "",
-        });
-      } else {
-        alert("Error sending message. Please try again.");
-      }
-    } catch {
-      alert("An unexpected error occurred. Please try again.");
-    } finally {
-      setIsLoading(false);
+    } else {
+      alert("Error sending message. Please try again.");
     }
-  };
+  } catch {
+    alert("An unexpected error occurred. Please try again.");
+  } finally {
+    setIsLoading(false);
+  }
+};
+
 
   return (
     <div className="contact-form-container" id="ContactUs">
