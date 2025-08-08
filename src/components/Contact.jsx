@@ -41,7 +41,7 @@ const ContactPageComponent = () => {
     formPayload.append("formData", JSON.stringify(formData));
 
     try {
-      const response = await fetch("https://server-1-22hx.onrender.com/api/send_email", {
+      const response = await fetch("https://consultancyserver.onrender.com/api/send_email", {
         method: "POST",
         body: formPayload,
       });
@@ -53,9 +53,6 @@ const ContactPageComponent = () => {
           lastName: "",
           email: "",
           phoneNumber: "",
-          association: "",
-          bestTimeToContact: "",
-          preferredMethodOfContact: "",
           additionalInformation: "",
         });
       } else {

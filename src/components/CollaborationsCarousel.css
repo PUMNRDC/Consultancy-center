@@ -53,8 +53,8 @@
 }
 
 .carousel-slide img {
-  max-width: 8vw;
-  max-height: 10vh;
+  max-width: 10vw;
+  max-height: 12vh;
   object-fit: contain;
 }
 
