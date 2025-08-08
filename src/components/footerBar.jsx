@@ -19,16 +19,16 @@ const FooterBar = () => {
           <h4 className="QuickLinks">Quick links</h4>
           <ul>
             <li>
-              <Link href="https://consultancy.paruluniversity.ac.in/contact">Get a Quote</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#ContactUs">Get a Quote</Link>
             </li>
             <li>
               <Link href="https://consultancy.paruluniversity.ac.in/#WhoWeAre">Who We Are</Link>
             </li>
             <li>
-              <Link href="https://consultancy.paruluniversity.ac.in/facilties">Our Facilties</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#Ourfacilities">Our Facilties</Link>
             </li>
             <li>
-              <Link href="https://consultancy.paruluniversity.ac.in/services">Our Services</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/#OurServices">Our Services</Link>
             </li>
             <li>
               <Link href="https://consultancy.paruluniversity.ac.in/#AboutUs">About Us</Link>
