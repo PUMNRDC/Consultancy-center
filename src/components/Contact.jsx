@@ -9,9 +9,6 @@ const ContactPageComponent = () => {
     lastName: "",
     email: "",
     phoneNumber: "",
-    association: "",
-    bestTimeToContact: "",
-    preferredMethodOfContact: "",
     additionalInformation: "",
   });
 
