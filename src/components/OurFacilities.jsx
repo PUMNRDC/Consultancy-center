@@ -29,7 +29,7 @@ const FacilitiesSection = () => {
     { name: "Forensic Sceince Lab", icon: "/forensics.png" },
     { name: "Advanced Chemistry Lab", icon: "/chemistrylab.png" },
     { name: "Soil Testing Lab", icon: "/soiltesting.png" },
-    { name: "Structure Analysis", icon: "/Public-Testing-Laboratory.png" },
+    { name: "Structure Analysis", icon: "/structureanalysis.png" },
     { name: "Electrical Machines Services", icon: "/Electrical-Machines-Laboratory.png" },
     { name: "Advanced Manufacturing Process Services", icon: "/Advanced-Manufacturing-Process-Laboratory.png" },
     { name: "Industrial Automation Control Services", icon: "/Industrial-Automation-Control-Laboratory.png" },
