@@ -19,7 +19,7 @@ const FooterBar = () => {
           <h4 className="QuickLinks">Quick links</h4>
           <ul>
             <li>
-              <Link href="/contact">Get a Quote</Link>
+              <Link href="https://consultancy.paruluniversity.ac.in/contact">Get a Quote</Link>
             </li>
             <li>
               <Link href="https://consultancy.paruluniversity.ac.in/#WhoWeAre">Who We Are</Link>
@@ -38,9 +38,9 @@ const FooterBar = () => {
         <div className="footer-contact">
           <a href="https://maps.app.goo.gl/Gj1fwqDi9GdETKP59" className="Consultancy">
             <h4>
-              Parul University Consultancy Center
+              Consultancy Center
             </h4>
-            <p className="address">Room 211, Subhash Chandra Bose Bhavan, Parul University,<br /> P. O Limda, Waghodia, Vadodara,Gujarat, India - 391760</p>
+            <p className="address">Parul University,<br /> P. O Limda, Waghodia, Vadodara,Gujarat, India - 391760</p>
           </a>
           <h4 className="GetinTouch">Get in Touch:<br /></h4>
           <p className="contactdetails" > <a href="mailto:consultancy@paruluniversity.ac.in">Email: consultancy@paruluniversity.ac.in</a><br/>
