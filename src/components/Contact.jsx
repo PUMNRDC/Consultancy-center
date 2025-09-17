@@ -9,6 +9,7 @@ const ContactPageComponent = () => {
     lastName: "",
     email: "",
     phoneNumber: "",
+    subject: "",
     additionalInformation: "",
   });
 
@@ -24,6 +25,7 @@ const ContactPageComponent = () => {
     if (!formData.firstName) formErrors.firstName = "First name is required.";
     if (!formData.lastName) formErrors.lastName = "Last name is required.";
     if (!formData.email) formErrors.email = "Email is required.";
+    if (!formData.subject) formErrors.subject = "Subject is required.";
     if (!formData.phoneNumber) formErrors.phoneNumber = "Phone number is required.";
     setErrors(formErrors);
     return Object.keys(formErrors).length === 0;
@@ -51,6 +53,7 @@ const handleSubmit = async (e) => {
         lastName: "",
         email: "",
         phoneNumber: "",
+        subject: "",
         additionalInformation: "",
       });
     } else {
@@ -119,6 +122,39 @@ const handleSubmit = async (e) => {
         />
         {errors.phoneNumber && <p className="error-flag">{errors.phoneNumber}</p>}
         <br></br>
+        
+     <select
+  name="subject"
+  value={formData.subject}
+  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+  required
+>
+  <option value="">Subject</option>
+  <option value="Engineering Service">Engineering Service</option>
+  <option value="Product Development">Product Development</option>
+  <option value="Material Testing">Material Testing</option>
+  <option value="VMC Machining Job Work">VMC Machining Job Work</option>
+  <option value="Engineering Design Service">Engineering Design Service</option>
+  <option value="Pharmacy Testing Service">Pharmacy Testing Service</option>
+  <option value="Analytical Testing Service">Analytical Testing Service</option>
+  <option value="Environment Audit">Environment Audit</option>
+  <option value="Ergonomic Analysis Service">Ergonomic Analysis Service</option>
+  <option value="Drug Delivery System Service">Drug Delivery System Service</option>
+  <option value="Clinical Testing Service">Clinical Testing Service</option>
+  <option value="Industrial Engineering Services">Industrial Engineering Services</option>
+  <option value="Lean Manufacturing Services">Lean Manufacturing Services</option>
+  <option value="Software Development Service">Software Development Service</option>
+  <option value="Architectural and planning services">Architectural and planning services</option>
+  <option value="Urban & Rural Planning services">Urban & Rural Planning services</option>
+  <option value="Ayurveda Services">Ayurveda Services</option>
+  <option value="Management Related Services">Management Related Services</option>
+  <option value="Business development Services">Business development Services</option>
+  <option value="Applied Science Services">Applied Science Services</option>
+  <option value="Food and Dairy Technology Service">Food and Dairy Technology Service</option>
+  <option value="Beverage Development Service">Beverage Development Service</option>
+  <option value="Other Services">Other Services (Please specify in description)</option>
+</select>
+
         <textarea
           name="additionalInformation"
           placeholder="Your message?"
