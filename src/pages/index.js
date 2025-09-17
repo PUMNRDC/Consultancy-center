@@ -10,6 +10,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import OurObjectives from "@/components/OurObjectives";
 import Gallery from "@/components/Gallery";
 import ConsultancyProjects from "@/components/ConsultancyProjects";
+import Achievements from "@/components/Achievements";
+import Brochures from "@/components/Brochures";
 import FacultyConsultancy from "@/components/FacultyConsultancy";
 
 const geistSans = Geist({
@@ -46,7 +48,9 @@ export default function Home() {
         <OurObjectives/>
         <OurFacilities/>
         <FacultyConsultancy />
+        <Brochures />
         <ConsultancyProjects />
+        <Achievements />
         <ContactPageComponent />
         <FooterBar/>
       </div>
