@@ -53,14 +53,6 @@ const ConsultancyHero = () => {
         animate={controls}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <Image
-          src="/AboutBanner.png"
-          alt="Parul University Consultancy Center"
-          width={800}
-          height={400}
-          className="about-image"
-          onLoadingComplete={() => setImageLoaded(true)}
-        />
       </motion.div>
     </motion.section>
   );
