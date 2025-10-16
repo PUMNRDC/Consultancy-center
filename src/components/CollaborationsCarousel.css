@@ -35,11 +35,17 @@
 .carousel-track-container {
   overflow: hidden;
   width: 100%;
+  
+  /* 🆕 Add these lines for vertical spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Adjust this value for the space between rows */
 }
 
 .carousel-track {
   display: flex;
   will-change: transform;
+  gap: 48px;
   transform: translate3d(0, 0, 0);
 }
 
