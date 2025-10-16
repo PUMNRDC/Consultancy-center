@@ -47,6 +47,7 @@ const NavBarHome = () => {
           <li><a href="/#OurClients">Clients</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
           <li><a href="/#OurServices">Services</a></li>
+          <li><a href="/#achievements">Achievements</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
           
@@ -71,6 +72,7 @@ const NavBarHome = () => {
           <li><a href="/#OurClients">Clients</a></li>
           <li><a href="/#Ourfacilities">Facilities</a></li>
           <li><a href="/#OurServices">Services</a></li>
+          <li><a href="/#achievements">Achievements</a></li>
           <li><a href="/#contact" className="cta">Contact Us</a></li>
         </ul>
        

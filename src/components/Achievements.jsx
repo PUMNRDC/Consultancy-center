@@ -104,7 +104,7 @@ const Achievements = ({
   }
 
   return (
-    <div className={styles.galleryContainer}>
+    <div className={styles.galleryContainer} id="achievements">
       <h2 className={styles.galleryTitle}>Our Achievements</h2>
       
       <div 
