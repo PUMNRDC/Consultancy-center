@@ -44,13 +44,14 @@ export default function Home() {
         <Hero/>
         <ConsultancyHero />
         <CollaborationsCarousel />
-        <Gallery />
+        <Achievements />
+        
         <OurObjectives/>
         <OurFacilities/>
         <FacultyConsultancy />
         <Brochures />
         <ConsultancyProjects />
-        <Achievements />
+        <Gallery />
         <ContactPageComponent />
         <FooterBar/>
       </div>
