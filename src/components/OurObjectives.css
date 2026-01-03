@@ -9,47 +9,70 @@
     color: #2c3e50;
   }
   
+
+.objectives-container {
+  display: grid;
+  width: 100%;
+  
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0; 
+}
+
+
+.objective-item {
+  background-size: cover;
+  background-position: center;
+  padding: 35px;
+  color: #fff;
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (min-width: 1200px) {
   .objectives-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    
+    grid-template-columns: repeat(5, 1fr);
   }
-  
-  .objective-item {
-    background-size: cover;
-    background-position: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding: 35px;
-    color: #fff;
-    width: 250px;
-    flex-grow: 1;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
+
+  .objective-item.additional-services {
+
+    grid-column: 1 / -1; 
+    
+   
+    text-align: center;
+    
+    padding-left: 20%;
+    padding-right: 20%;
   }
-  
-  .objective-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .objective-item h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 15px 0;
-  }
-  
-  .objective-item p {
-    font-size: 0.8rem;
-    font-weight: 300;
-  }
-  
-  .icon img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-  }
-  
-/* Different background images for each block */
+}
+
+
+.objective-item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.objective-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.objective-item p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5; 
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
 .research-support {
     background-image: url('/ResearchSupport.png');
     background-size: cover;
@@ -85,4 +108,3 @@
     background-size: cover;
     background-position: center;
   }
-  

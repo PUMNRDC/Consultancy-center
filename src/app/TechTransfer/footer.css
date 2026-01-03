@@ -1,0 +1,131 @@
+.footer {
+  background-color: #0A1F33;
+  color: white;
+  padding: 3em 5em 0em 5em !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  margin-left: 0;
+}
+
+.footer-logo {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.pu_logo {
+  width: 250px;
+  max-width: 100%;
+}
+
+.footer-links {
+  flex: 1;
+  color: white;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5%;
+}
+
+.footer-links h4, .footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-contact {
+  flex: 1;
+  color: white;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 1.5rem;
+  color: white !important;
+}
+
+.footer-social-icons a {
+  font-size: 1.8rem;
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #0077b5 !important;
+}
+
+.footer-social-icons a[aria-label="WhatsApp"]:hover {
+  color: #25D366 !important;
+}
+
+.footer-social-icons a[aria-label="Instagram"]:hover {
+  color: #E4405F !important;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  color: white;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 2em 1.5em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+    width: 100%;
+  }
+}

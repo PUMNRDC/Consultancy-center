@@ -49,7 +49,7 @@ const OurObjectives = () => {
     {
       icon: "/additional-services.png",
       className: "additional-services",
-      title: "Additional Services",
+      title: "Customized Services",
       description:
         "To offer customised services to industries and other education and research organizations as testing/consultancy services as per their needs.",
     },
