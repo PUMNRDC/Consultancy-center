@@ -32,6 +32,9 @@ const Achievements = ({
           "https://i.ibb.co/zVm0Jqdd/mr-pradeep-karsh-n.png",
           "https://i.ibb.co/PvnMtSXY/mrs-jalpa-zalawadia.png",
           "https://i.ibb.co/SXY6DQqw/satish-jha.png",
+          "https://i.ibb.co/dwJ1vFqB/achievement-congratulation-ishan-desai.jpg",
+        "https://i.ibb.co/FkMFp3KZ/achievement-post-dr-nidhi.jpg",
+        "https://i.ibb.co/203hdW33/achievement-ms-binal-7-1-26.jpg"
         ];
     
     setImages(initialImages);
