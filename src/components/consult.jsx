@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react"; 
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./consult.module.css";
@@ -26,7 +26,17 @@ const WhyConsult = () => {
 
     const videos = [
         "https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/Physiotherapy.mp4",
-        "https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/engineering.mp4"
+        "https://fyoduqdftpxmnwhm.public.blob.vercel-storage.com/engineering.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Civil%20Engineering%2825_3_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Consultancy%20service%20video%20%2829_4_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Copy%20of%20Lean%20six%20sigma%20%289_4_26%29.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Energy%20Audit%20%289_4_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Environment%20consultancy%2830_3_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Hotel%20Management%20%2830_4_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Lean%20six%20sigma%20%2825_3_26%29.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/Value%20Engineering%20%2825_3_26%29%20.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/pharmacy%20video%20%2830_3_26%29.mp4",
+        "https://mnaignsupdlayf72.public.blob.vercel-storage.com/process%20optimization%20video.mp4%20%289_12_25%29.mp4",
     ];
 
     const nextVideo = () => {
